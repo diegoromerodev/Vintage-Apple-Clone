@@ -9,6 +9,7 @@ searchBar.addEventListener("focus", () => {
 
 searchBar.addEventListener("blur", () => {
     searchBar.parentElement.style.flex = 1;
+    searchBar.value = "";
     searchBar.parentElement.style.background = "rgba(240,240,240,0.4)";
     magnifyingGlass.style.filter = "invert(100%)";
 })
